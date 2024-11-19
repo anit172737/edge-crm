@@ -113,11 +113,16 @@ const CustomAccordion = ({
         </div>
         {showSaveCancel && isEditable && (
           <div style={{ marginTop: "10px", paddingBottom: "20px" }}>
-            <Button variant="contained" color="primary" onClick={handleSave}>
+            <Button
+              className="Btn saveBtn"
+              variant="contained"
+              color="primary"
+              onClick={handleSave}
+            >
               Save
             </Button>
             <Button
-              className="cancelBtn"
+              className="Btn cancelBtn"
               variant="outlined"
               color="secondary"
               style={{ marginLeft: "10px" }}
