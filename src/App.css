@@ -44,6 +44,12 @@
   margin-right: 40px !important;
 }
 
+.cancelBtn {
+  border: 2px solid gray !important;
+  color: gray !important;
+  font-weight: 600 !important;
+}
+
 body {
   p {
     font-family: "Nunito Sans" !important;

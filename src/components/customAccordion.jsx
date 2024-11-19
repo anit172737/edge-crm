@@ -117,6 +117,7 @@ const CustomAccordion = ({
               Save
             </Button>
             <Button
+              className="cancelBtn"
               variant="outlined"
               color="secondary"
               style={{ marginLeft: "10px" }}
