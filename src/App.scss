@@ -1,3 +1,41 @@
+body {
+  p {
+    font-family: "Nunito Sans" !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+  }
+
+  span {
+    font-family: "Nunito Sans" !important;
+    font-weight: 600 !important;
+  }
+
+  h3 {
+    font-family: "Nunito Sans" !important;
+    font-weight: 600 !important;
+    font-size: 21px;
+  }
+
+  button {
+    font-family: "Nunito Sans" !important;
+    font-weight: 600 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: black;
+    cursor: pointer;
+  }
+}
+
 .App {
   display: grid;
   justify-content: center;
@@ -73,42 +111,4 @@
 
 .css-13lvt8g-MuiButtonBase-root-MuiRadio-root.Mui-checked {
   color: black !important;
-}
-
-body {
-  p {
-    font-family: "Nunito Sans" !important;
-    font-weight: 600 !important;
-    font-size: 18px !important;
-  }
-
-  span {
-    font-family: "Nunito Sans" !important;
-    font-weight: 600 !important;
-  }
-
-  h3 {
-    font-family: "Nunito Sans" !important;
-    font-weight: 600 !important;
-    font-size: 21px;
-  }
-
-  button {
-    font-family: "Nunito Sans" !important;
-    font-weight: 600 !important;
-  }
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: gray;
-  border-radius: 1rem;
-
-  &:hover {
-    background-color: black;
-    cursor: pointer;
-  }
 }
