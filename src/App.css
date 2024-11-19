@@ -39,9 +39,9 @@
   border-right: 8px solid rgb(241, 241, 241);
 }
 
-.label {
+.formLabel {
   color: gray;
-  margin-right: 40px;
+  margin-right: 40px !important;
 }
 
 body {

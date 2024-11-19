@@ -87,21 +87,21 @@ const CustomAccordion = ({
                 onChange={(e) => handleAnswerChange(i, e.target.value)}
               >
                 <FormControlLabel
-                  className="label"
+                  className="formLabel"
                   value="Yes"
                   control={<Radio />}
                   label="Yes"
                   disabled={!isEditable}
                 />
                 <FormControlLabel
-                  className="label"
+                  className="formLabel"
                   value="No"
                   control={<Radio />}
                   label="No"
                   disabled={!isEditable}
                 />
                 <FormControlLabel
-                  className="label"
+                  className="formLabel"
                   value="NA"
                   control={<Radio />}
                   label="NA"
