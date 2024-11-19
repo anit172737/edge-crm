@@ -64,13 +64,23 @@ const CustomAccordion = ({
       onChange={() => setExpanded(!expanded)}
     >
       <AccordionSummary
-        className={expanded ? "summary summary-expand" : "summary"}
-        expandIcon={<ExpandMoreIcon className="expand-icon" />}
+        className={
+          expanded
+            ? "accordion-summary accordion-summary-expand"
+            : "accordion-summary"
+        }
+        expandIcon={
+          <ExpandMoreIcon className="accordion-summary-expand-icon" />
+        }
       >
         <h3>{title}</h3>
       </AccordionSummary>
       <AccordionDetails
-        className={expanded ? "detail detail-expand" : "detail"}
+        className={
+          expanded
+            ? "accordion-detail accordion-detail-expand"
+            : "accordion-detail"
+        }
       >
         <div
           style={{
@@ -79,7 +89,7 @@ const CustomAccordion = ({
           }}
         >
           {questions.map((question, i) => (
-            <div key={i} style={{ marginBottom: "10px" }}>
+            <div key={i} className="accordion-detail-questions">
               <Typography>{question}</Typography>
               <RadioGroup
                 row
@@ -87,21 +97,21 @@ const CustomAccordion = ({
                 onChange={(e) => handleAnswerChange(i, e.target.value)}
               >
                 <FormControlLabel
-                  className="formLabel"
+                  className="accordion-detail-questions-formLabel"
                   value="Yes"
                   control={<Radio />}
                   label="Yes"
                   disabled={!isEditable}
                 />
                 <FormControlLabel
-                  className="formLabel"
+                  className="accordion-detail-questions-formLabel"
                   value="No"
                   control={<Radio />}
                   label="No"
                   disabled={!isEditable}
                 />
                 <FormControlLabel
-                  className="formLabel"
+                  className="accordion-detail-questions-formLabel"
                   value="NA"
                   control={<Radio />}
                   label="NA"
@@ -112,9 +122,9 @@ const CustomAccordion = ({
           ))}
         </div>
         {showSaveCancel && isEditable && (
-          <div style={{ marginTop: "10px", paddingBottom: "20px" }}>
+          <div className="accordion-detail-Btns">
             <Button
-              className="Btn saveBtn"
+              className=" accordion-detail-Btns-Btn accordion-detail-Btns-Btn-saveBtn"
               variant="contained"
               color="primary"
               onClick={handleSave}
@@ -122,10 +132,9 @@ const CustomAccordion = ({
               Save
             </Button>
             <Button
-              className="Btn cancelBtn"
+              className="accordion-detail-Btns-Btn accordion-detail-Btns-Btn-cancelBtn"
               variant="outlined"
               color="secondary"
-              style={{ marginLeft: "10px" }}
               onClick={handleCancel}
             >
               Cancel
